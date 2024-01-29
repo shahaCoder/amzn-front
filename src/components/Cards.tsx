@@ -3,6 +3,8 @@ import * as React from "react";
 export interface IAppProps {}
 
 export function Cards({ i }: any) {
+   console.log(i.img);
+   
    return (
       <a
          href={i?.link}
