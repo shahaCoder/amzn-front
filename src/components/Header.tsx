@@ -7,7 +7,7 @@ export function Header(props: IAppProps) {
       <header className="w-full py-6 px-4 flex items-center justify-between">
          <a href="/" className="flex items-center ga-4">
             <img src="./logo.png" className="w-[48px] h-[36px]" alt="logo" />
-            <h1>Amazon Finds</h1>
+            <h1>Amazon Goods</h1>
          </a>
          <ul className="flex items-center gap-4">
             <li>Products</li>
