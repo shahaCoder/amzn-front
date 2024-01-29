@@ -10,8 +10,8 @@ export function Header(props: IAppProps) {
             <h1>Amazon Goods</h1>
          </a>
          <ul className="flex items-center gap-4">
-            <li>Products</li>
-            <li className="max-sm:hidden">Contacts</li>
+            <a href="recently">Products</a>
+            <a href="footer" className="max-sm:hidden">Contacts</a>
          </ul>
       </header>
    );

@@ -5,19 +5,15 @@ export interface IAppProps {}
 export function Footer(props: IAppProps) {
    return (
       <div>
-         <div className="w-full py-6 ">
-            <footer className="bg-white">
+         <div className="w-full py-6">
+            <footer className="bg-white" id="footer">
                <div className="w-full custom-container">
                   <div className="sm:flex sm:items-center sm:justify-between">
                      <a
                         href="#"
                         className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
                      >
-                        <img
-                           src="https://flowbite.com/docs/images/logo.svg"
-                           className="h-8"
-                           alt="Flowbite Logo"
-                        />
+                        <img src="./logo.png" className="w-[52px] h-[40px]" alt="logo" />
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                            Amazon Finds
                         </span>

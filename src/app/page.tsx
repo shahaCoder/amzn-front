@@ -103,7 +103,7 @@ export default function Home() {
             </div>
          </div>
          <section className="my-10">
-            <h1 className="text-2xl font-bold mb-4">
+            <h1 className="text-2xl font-bold mb-4" id="recently">
                RECENTLY PUBLISHED PRODUCTS
             </h1>
             <Recently data={products} />
