@@ -16,14 +16,14 @@ export default function Home() {
       if (value?.length < 1 || value == '') {
          setVisible(false);
       }
-      fetch("https://back-mlli.onrender.com/api/products/api/products")
+      fetch("https://back-mlli.onrender.com/api/products")
          .then((res) => res.json())
          .then((res) => setProducts(res));
    }, []);
    useEffect(() => {
       if(value.trim() !== ''){
          try {
-            fetch(`https://back-mlli.onrender.com/api/products/api/products/title/${value.includes('#') ? value.replace('#', '%23') + value.slice(1, 0) : value}`)
+            fetch(`https://back-mlli.onrender.com/api/products/title/${value.includes('#') ? value.replace('#', '%23') + value.slice(1, 0) : value}`)
          .then((res) => res.json())
          .then((res) =>  setProducts2(res));
          } catch (error) {
