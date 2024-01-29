@@ -6,50 +6,6 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { IoIosSearch } from "react-icons/io";
 
-const arr = [
-   {
-      id: 0,
-      title: "hot hat",
-      img: "/hat.jpg",
-      price: "100",
-      link: "#",
-   },
-   {
-      id: 1,
-      title: "hot hat 2",
-      img: "/hat.jpg",
-      price: "1000",
-      link: "#",
-   },
-   {
-      id: 2,
-      title: "hot hat 3",
-      img: "/hat.jpg",
-      price: "300",
-      link: "#",
-   },
-   {
-      id: 3,
-      title: "hot hat 4",
-      img: "/hat.jpg",
-      price: "200",
-      link: "#",
-   },
-   {
-      id: 4,
-      title: "hot hat 5",
-      img: "/hat.jpg",
-      price: "100",
-      link: "#",
-   },
-   {
-      id: 5,
-      title: "hot hat 6",
-      img: "/hat.jpg",
-      price: "1",
-      link: "#",
-   },
-];
 
 export default function Home() {
    const [visible, setVisible] = useState<boolean>(false);
@@ -60,14 +16,14 @@ export default function Home() {
       if (value?.length < 1 || value == '') {
          setVisible(false);
       }
-      fetch("http://localhost:3002/api/products")
+      fetch("https://back-mlli.onrender.com/api/products/api/products")
          .then((res) => res.json())
          .then((res) => setProducts(res));
    }, []);
    useEffect(() => {
       if(value.trim() !== ''){
          try {
-            fetch(`http://localhost:3002/api/products/title/${value.includes('#') ? value.replace('#', '%23') + value.slice(1, 0) : value}`)
+            fetch(`https://back-mlli.onrender.com/api/products/api/products/title/${value.includes('#') ? value.replace('#', '%23') + value.slice(1, 0) : value}`)
          .then((res) => res.json())
          .then((res) =>  setProducts2(res));
          } catch (error) {

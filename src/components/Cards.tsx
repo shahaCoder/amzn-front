@@ -8,7 +8,7 @@ export function Cards({ i }: any) {
          href={i?.link}
          className="flex flex-col justify-between p-4 max-sm:p-2 rounded-lg border-1 shadow-lg hover:-translate-y-2 duration-100 ease-in h-[320px]"
       >
-         <div className="w-full h-[220px]  mb-5 bg-no-repeat bg-contain bg-center" style={{backgroundImage: `url(http://localhost:3002${i?.img})`}}>
+         <div className="w-full h-[220px]  mb-5 bg-no-repeat bg-contain bg-center" style={{backgroundImage: `url(https://back-mlli.onrender.com/api/products${i?.img})`}}>
          </div>
          <div className="w-full mt-auto">
             <p className="text-[#007185] truncate text-md max-sm:text-lg uppercase">
