@@ -106,11 +106,15 @@ export default function Home() {
             <h1 className="text-2xl font-bold mb-4" id="recently">
                RECENTLY PUBLISHED PRODUCTS
             </h1>
-            <Recently data={products} />
+            {
+               products ? <Recently data={products} /> : <h1>LOADING...</h1>
+            }
          </section>
          <section className="my-10">
             <h1 className="text-2xl font-bold mb-4">ALL PRODUCTS</h1>
-            <Recently data={products} />
+            {
+               products ? <Recently data={products} /> : <h1>LOADING...</h1>
+            }
          </section>
       </div>
    );
