@@ -20,7 +20,7 @@ export function Footer(props: IAppProps) {
                      </a>
                      <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                         <li>
-                           <a href="https://www.tiktok.com/@amazonfinds.the.best?_t=8jRQW3nQ8XW&_r=1" className="hover:underline me-4 md:me-6">
+                           <a href="https://www.tiktok.com/@amazon.goods1?is_from_webapp=1&sender_device=pc" className="hover:underline me-4 md:me-6">
                               <FaTiktok size={'30px'}/>
                            </a>
                         </li>
