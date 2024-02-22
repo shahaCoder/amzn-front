@@ -15,7 +15,7 @@ export function Footer(props: IAppProps) {
                      >
                         <img src="./logo.png" className="w-[52px] h-[40px]" alt="logo" />
                         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                           Amazon Finds
+                           Amazon Goods
                         </span>
                      </a>
                      <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
@@ -30,7 +30,7 @@ export function Footer(props: IAppProps) {
                   <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
                      © 2024{" "}
                      <a href="#" className="hover:underline">
-                        Amazon Finds™
+                        Amazon Goods™
                      </a>
                      . All Rights Reserved.
                   </span>
